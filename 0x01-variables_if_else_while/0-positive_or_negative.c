@@ -1,23 +1,32 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - testing just keep the main and return format and you're good to go
+ * return - Always (Success)
+ */
+
 int main(void)
+
 {
 	int n;
-	if(n>0)
-		{
-		printf("is positive\n");	
-		}
-	else if(n==0)
-		printf("is zero\n");
-	else
-	{
-		printf("is negative\n");
-	}
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
+
 	return (0);
 }

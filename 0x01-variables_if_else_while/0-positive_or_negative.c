@@ -3,8 +3,9 @@
 #include <time.h>
 
 /**
- * main - testing just keep the main and return format and you're good to go
- * return - Always (Success)
+ * main - prints if number is positive zero or negative
+ * Return: returns the value
+ *
  */
 
 int main(void)
